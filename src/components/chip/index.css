@@ -1,0 +1,10 @@
+.chip-wrapper {
+    width: max-content;
+    height: 16px;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.chip-text {
+    font-size: 12px;
+}
