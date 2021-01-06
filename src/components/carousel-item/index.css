@@ -1,0 +1,18 @@
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.carousel-image-wrapper {
+    width: 150px;
+}
+
+.carousel-image {
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+}

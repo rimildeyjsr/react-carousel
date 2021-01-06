@@ -1,9 +1,11 @@
 import React from 'react';
 import Chip from '../chip';
+import "./index.css";
 
-const CarouselItem = ({bookInfo: {name, imageLink, imageAlt, price, category}}) => {
+const CarouselItem = ({bookInfo: {name, imageLink, imageAlt, price, category}, middleElement = false}) => {
+  const paddingValue = middleElement ? 50 : 20;
   return (
-    <div className="carousel-item">
+    <div className="carousel-item" style={{padding: paddingValue + 'px'}}>
 
       <div className="carousel-image-wrapper">
         <img
