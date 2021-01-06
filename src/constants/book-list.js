@@ -17,7 +17,7 @@ export const bookItemList = [
     name: 'The book thief',
     price: 388,
     category: ['fiction', 'historical', 'young adult', 'war'],
-    id: 1,
+    key: 1,
   },
   {
     imageLink: earthSeaImg,
@@ -25,7 +25,7 @@ export const bookItemList = [
     name: 'Books of Earthsea',
     price: 2599,
     category: ['fantasy', 'fiction', 'classics', 'science fiction', 'magic'],
-    id: 2,
+    key: 2,
   },
   {
     imageLink: gameOfThronesImg,
@@ -33,7 +33,7 @@ export const bookItemList = [
     name: 'Game of thrones - book set',
     price: 2493,
     category: ['fantasy', 'fiction', 'adventure', 'epic'],
-    id: 3,
+    key: 3,
   },
   {
     imageLink: goodOmensImg,
@@ -41,7 +41,7 @@ export const bookItemList = [
     name: 'Good Omens',
     price: 303,
     category: ['fantasy', 'fiction', 'humour', 'supernatural'],
-    id: 4,
+    key: 4,
   },
   {
     imageLink: greatGatsbyImg,
@@ -49,7 +49,7 @@ export const bookItemList = [
     name: 'The Great Gatsby',
     price: 99,
     category: ['classic', 'fiction', 'romance'],
-    id: 5,
+    key: 5,
   },
   {
     imageLink: harryPotterImg,
@@ -57,7 +57,7 @@ export const bookItemList = [
     name: 'Harry Potter - book set',
     price: 2505,
     category: ['fantasy', 'fiction', 'children', 'adventure'],
-    id: 6,
+    key: 6,
   },
   {
     imageLink: hitchHikerGuideImg,
@@ -65,7 +65,7 @@ export const bookItemList = [
     name: 'Hitchikers Guide to the galaxy',
     price: 574,
     category: ['science-fiction', 'fiction', 'humour', 'adventure'],
-    id: 7,
+    key: 7,
   },
   {
     imageLink: lordOfTheRingsImg,
@@ -73,7 +73,7 @@ export const bookItemList = [
     name: 'Lord of the rings',
     price: 969,
     category: ['fantasy', 'fiction', 'adventure', 'young adult'],
-    id: 8,
+    key: 8,
   },
   {
     imageLink: prideAndPrejudiceImg,
@@ -81,7 +81,7 @@ export const bookItemList = [
     name: 'Pride and prejudice',
     price: 112,
     category: ['classic', 'fiction', 'romance'],
-    id: 9,
+    key: 9,
   },
   {
     imageLink: sapiensImg,
@@ -89,7 +89,7 @@ export const bookItemList = [
     name: 'Sapiens',
     price: 399,
     category: ['non-fiction', 'philosophy', 'anthropological'],
-    id: 10,
+    key: 10,
   },
   {
     imageLink: wutheringHeightsImg,
@@ -97,6 +97,6 @@ export const bookItemList = [
     name: 'Wuthering heights',
     price: 113,
     category: ['classic', 'romance', 'fiction'],
-    id: 11,
+    key: 11,
   },
 ];

@@ -1,7 +1,6 @@
-.flex-centered {
+.center-align-flex {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .carousel {
@@ -10,4 +9,6 @@
 
 .carousel-wrapper {
     margin-bottom: 25px;
+    width: 1150px;
+    overflow: hidden;
 }
