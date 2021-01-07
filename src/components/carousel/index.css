@@ -1,14 +1,16 @@
-.center-align-flex {
-    display: flex;
-    align-items: center;
-}
-
 .carousel {
+    display: flex;
     flex-direction: column;
+    width: 85%;
+    position: relative;
+    overflow: hidden;
 }
 
 .carousel-wrapper {
+    display: flex;
+    align-items: center;
     margin-bottom: 25px;
-    width: 1150px;
-    overflow: hidden;
+    width: max-content;
+    transform-origin: 0 50%;
+    transition: all .6s ease;
 }
