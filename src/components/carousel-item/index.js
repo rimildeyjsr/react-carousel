@@ -21,9 +21,11 @@ const CarouselItem = ({bookInfo: {name, imageLink, imageAlt, price, category}, m
         </h4>
 
         <p className="carousel-price">
-          {price}
+          ₹ {price}/-
         </p>
       </div>
+
+      <div className="divider-line" />
 
       <div className="carousel-categories">
         {

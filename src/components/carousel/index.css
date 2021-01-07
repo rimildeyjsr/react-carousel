@@ -14,3 +14,16 @@
     transform-origin: 0 50%;
     transition: all .6s ease;
 }
+
+.arrow-button {
+    width: 35px;
+    height: 35px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 15px;
+}
+
+.restricted-cursor {
+    cursor: not-allowed;
+}

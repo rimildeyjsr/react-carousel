@@ -7,6 +7,9 @@
     height: 350px;
     width: 300px;
     margin: 25px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 .carousel-image-wrapper {
@@ -19,12 +22,6 @@
     object-fit: scale-down;
 }
 
-.carousel-categories {
-    display: flex;
-    flex-wrap: wrap;
-    width: 250px;
-}
-
 .carousel-information {
     display: flex;
     flex-direction: column;
@@ -32,7 +29,25 @@
     justify-content: center;
 }
 
-.carousel-name,
-.carousel-price {
+.carousel-name {
+    font-size: 16px;
     margin: 20px 0 10px;
+}
+
+.carousel-price {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.carousel-categories {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.divider-line {
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0 20px;
 }

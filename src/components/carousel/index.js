@@ -5,14 +5,15 @@ import "./index.css";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(1);
-  const [direction, setDirection] = useState(0);
+  const [offset, setOffset] = useState(0);
   const totalBooks = bookItemList.length;
+  const CARD_WIDTH = 392;
 
   const moveToPreviousIndex = () => {
     const previousIndex = activeIndex - 1;
     if(previousIndex - 1 >= 0) {
       setActiveIndex(previousIndex);
-      setDirection(direction + 392);
+      setOffset(offset + CARD_WIDTH);
     }
   };
 
@@ -20,7 +21,7 @@ const Carousel = () => {
     const nextIndex = activeIndex + 1;
     if(nextIndex + 1 < totalBooks) {
       setActiveIndex(nextIndex);
-      setDirection(direction - 392);
+      setOffset(offset - CARD_WIDTH);
     }
   };
 
@@ -31,7 +32,7 @@ const Carousel = () => {
           totalBooks > 0 ?
             <div
               className="carousel-wrapper"
-              style={{transform: 'translateX(' + direction + 'px'}}
+              style={{transform: 'translateX(' + offset + 'px'}}
             >
               {
                 bookItemList.map((book, index) => {
@@ -55,11 +56,19 @@ const Carousel = () => {
       </div>
 
       <div className="carousel-arrow-wrapper">
-        <button onClick={moveToPreviousIndex}>
+        <button
+          onClick={moveToPreviousIndex}
+          className={activeIndex - 2 >= 0 ? 'arrow-button' : 'restricted-cursor arrow-button'}
+          disabled={activeIndex - 2 < 0}
+        >
           {"<"}
         </button>
 
-        <button onClick={moveToNextIndex}>
+        <button
+          onClick={moveToNextIndex}
+          className={activeIndex + 2 < totalBooks ? 'arrow-button' : 'restricted-cursor  arrow-button'}
+          disabled={activeIndex + 2 >= totalBooks}
+        >
           {">"}
         </button>
       </div>

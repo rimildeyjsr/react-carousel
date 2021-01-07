@@ -1,3 +1,4 @@
+import FILTER_CATEGORIES from "../constants/filter-categories";
 import bookThiefImg from "../assets/book-thief.jpg";
 import earthSeaImg from "../assets/books-of-earthsea.jpg";
 import gameOfThronesImg from "../assets/game-of-thrones.jpg";
@@ -16,7 +17,12 @@ export const bookItemList = [
     imageAlt: 'book thief book cover',
     name: 'The book thief',
     price: 388,
-    category: ['fiction', 'historical', 'young adult', 'war'],
+    category: [
+      FILTER_CATEGORIES.FICTION,
+      FILTER_CATEGORIES.HISTORICAL,
+      FILTER_CATEGORIES.YOUNG_ADULT,
+      FILTER_CATEGORIES.WAR,
+    ],
     key: 1,
   },
   {
@@ -24,7 +30,12 @@ export const bookItemList = [
     imageAlt: 'books of earthsea book cover',
     name: 'Books of Earthsea',
     price: 2599,
-    category: ['fantasy', 'fiction', 'classics', 'science fiction', 'magic'],
+    category: [
+      FILTER_CATEGORIES.FANTASY,
+      FILTER_CATEGORIES.FICTION,
+      FILTER_CATEGORIES.CLASSIC,
+      FILTER_CATEGORIES.SCIENCE_FICTION,
+      'magic'],
     key: 2,
   },
   {
@@ -32,7 +43,12 @@ export const bookItemList = [
     imageAlt: 'Game of thrones book cover',
     name: 'Game of thrones - book set',
     price: 2493,
-    category: ['fantasy', 'fiction', 'adventure', 'epic'],
+    category: [
+      FILTER_CATEGORIES.FANTASY,
+      FILTER_CATEGORIES.FICTION,
+      FILTER_CATEGORIES.ADVENTURE,
+      FILTER_CATEGORIES.EPIC,
+    ],
     key: 3,
   },
   {
@@ -40,7 +56,12 @@ export const bookItemList = [
     imageAlt: 'Good omens book cover',
     name: 'Good Omens',
     price: 303,
-    category: ['fantasy', 'fiction', 'humour', 'supernatural'],
+    category: [
+      FILTER_CATEGORIES.FANTASY,
+      FILTER_CATEGORIES.FICTION,
+      FILTER_CATEGORIES.HUMOUR,
+      FILTER_CATEGORIES.SUPERNATURAL,
+    ],
     key: 4,
   },
   {
@@ -48,7 +69,11 @@ export const bookItemList = [
     imageAlt: 'Great Gatsby book cover',
     name: 'The Great Gatsby',
     price: 99,
-    category: ['classic', 'fiction', 'romance'],
+    category: [
+      FILTER_CATEGORIES.CLASSIC,
+      FILTER_CATEGORIES.FICTION,
+      FILTER_CATEGORIES.ROMANCE,
+    ],
     key: 5,
   },
   {
@@ -56,7 +81,12 @@ export const bookItemList = [
     imageAlt: 'harry potter book cover',
     name: 'Harry Potter - book set',
     price: 2505,
-    category: ['fantasy', 'fiction', 'children', 'adventure'],
+    category: [
+      FILTER_CATEGORIES.FANTASY,
+      FILTER_CATEGORIES.FICTION,
+      FILTER_CATEGORIES.CHILDREN,
+      FILTER_CATEGORIES.ADVENTURE,
+    ],
     key: 6,
   },
   {
@@ -64,7 +94,12 @@ export const bookItemList = [
     imageAlt: 'Hitchhikers guide to the galaxy book cover',
     name: 'Hitchikers Guide to the galaxy',
     price: 574,
-    category: ['science-fiction', 'fiction', 'humour', 'adventure'],
+    category: [
+      FILTER_CATEGORIES.SCIENCE_FICTION,
+      FILTER_CATEGORIES.FICTION,
+      FILTER_CATEGORIES.HUMOUR,
+      FILTER_CATEGORIES.ADVENTURE,
+    ],
     key: 7,
   },
   {
@@ -72,7 +107,12 @@ export const bookItemList = [
     imageAlt: 'Lord of the rings book cover',
     name: 'Lord of the rings',
     price: 969,
-    category: ['fantasy', 'fiction', 'adventure', 'young adult'],
+    category: [
+      FILTER_CATEGORIES.FANTASY,
+      FILTER_CATEGORIES.FICTION,
+      FILTER_CATEGORIES.ADVENTURE,
+      FILTER_CATEGORIES.YOUNG_ADULT,
+    ],
     key: 8,
   },
   {
@@ -80,7 +120,11 @@ export const bookItemList = [
     imageAlt: 'Pride and prejudice book cover',
     name: 'Pride and prejudice',
     price: 112,
-    category: ['classic', 'fiction', 'romance'],
+    category: [
+      FILTER_CATEGORIES.CLASSIC,
+      FILTER_CATEGORIES.FICTION,
+      FILTER_CATEGORIES.ROMANCE,
+    ],
     key: 9,
   },
   {
@@ -88,7 +132,11 @@ export const bookItemList = [
     imageAlt: 'sapiens book cover',
     name: 'Sapiens',
     price: 399,
-    category: ['non-fiction', 'philosophy', 'anthropological'],
+    category: [
+      FILTER_CATEGORIES.NON_FICTION,
+      FILTER_CATEGORIES.PHILOSOPHY,
+      FILTER_CATEGORIES.ANTHROPOLOGICAL,
+    ],
     key: 10,
   },
   {
@@ -96,7 +144,11 @@ export const bookItemList = [
     imageAlt: 'wuthering heights book cover',
     name: 'Wuthering heights',
     price: 113,
-    category: ['classic', 'romance', 'fiction'],
+    category: [
+      FILTER_CATEGORIES.CLASSIC,
+      FILTER_CATEGORIES.ROMANCE,
+      FILTER_CATEGORIES.FICTION,
+    ],
     key: 11,
   },
 ];
