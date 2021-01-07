@@ -1,0 +1,22 @@
+.category-filters-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    flex-wrap: wrap;
+}
+
+.filter-category-wrapper {
+    width: max-content;
+    border-radius: 2px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.filter-text {
+    font-size: 16px;
+    margin: 0;
+}

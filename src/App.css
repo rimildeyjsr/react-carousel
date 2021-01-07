@@ -4,3 +4,10 @@
     justify-content: center;
     align-items: center;
 }
+
+.divider-line {
+    background-color: black;
+    height: 1px;
+    width: 80%;
+    margin: 10px 0 20px;
+}
