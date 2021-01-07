@@ -1,13 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import CarouselItem from "../carousel-item";
-import {bookItemList} from "../../constants/book-list";
 import "./index.css";
 
-const Carousel = () => {
+const Carousel = ({list}) => {
   const [activeIndex, setActiveIndex] = useState(1);
   const [offset, setOffset] = useState(0);
-  const totalBooks = bookItemList.length;
+  const [bookList, setBookList] = useState(list);
   const CARD_WIDTH = 392;
+
+  useEffect(() => {
+    setBookList(list);
+  }, [list]);
 
   const moveToPreviousIndex = () => {
     const previousIndex = activeIndex - 1;
@@ -19,7 +22,7 @@ const Carousel = () => {
 
   const moveToNextIndex = () => {
     const nextIndex = activeIndex + 1;
-    if(nextIndex + 1 < totalBooks) {
+    if(nextIndex + 1 < bookList.length) {
       setActiveIndex(nextIndex);
       setOffset(offset - CARD_WIDTH);
     }
@@ -29,13 +32,13 @@ const Carousel = () => {
     <>
       <div className="carousel">
         {
-          totalBooks > 0 ?
+          bookList.length > 0 ?
             <div
               className="carousel-wrapper"
               style={{transform: 'translateX(' + offset + 'px'}}
             >
               {
-                bookItemList.map((book, index) => {
+                bookList.map((book, index) => {
                   return (
                     <CarouselItem
                       bookInfo={book}
@@ -66,8 +69,8 @@ const Carousel = () => {
 
         <button
           onClick={moveToNextIndex}
-          className={activeIndex + 2 < totalBooks ? 'arrow-button' : 'restricted-cursor  arrow-button'}
-          disabled={activeIndex + 2 >= totalBooks}
+          className={activeIndex + 2 <  bookList.length ? 'arrow-button' : 'restricted-cursor  arrow-button'}
+          disabled={activeIndex + 2 >=  bookList.length}
         >
           {">"}
         </button>

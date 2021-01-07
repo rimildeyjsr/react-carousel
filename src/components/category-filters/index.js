@@ -1,14 +1,15 @@
 import React, {useState, useRef} from 'react';
 import FILTER_CATEGORIES from "../../constants/filter-categories";
 import "./index.css";
+import {bookItemList} from "../../constants/book-list";
 
-const CategoryFilters = () => {
+const CategoryFilters = ({setBookList}) => {
   const [selectedFilters, setSelectedFilter] = useState([]);
   const buttonRef = useRef();
 
   const updateFilters = (category, index) => {
     isFilterSelected(category) ? removeFilter(category, index) : addFilter(category, index);
-    console.log(selectedFilters);
+    filterList();
   };
 
   const removeFilter = (category, index) => {
@@ -21,12 +22,28 @@ const CategoryFilters = () => {
   const addFilter = (category, index) => {
     selectedFilters.push(category);
     setSelectedFilter(selectedFilters);
-    console.log(buttonRef);
     buttonRef.current.children[index].style.backgroundColor = '#dcf9ec';
   };
 
   const isFilterSelected = (category) => {
     return selectedFilters.includes(category);
+  };
+
+  const filterList = () => {
+    let list = [];
+    if(selectedFilters.length) {
+      selectedFilters.forEach((filter) => {
+        bookItemList.forEach((book) => {
+          if (book.category.includes(FILTER_CATEGORIES[filter])) {
+            list.push(book);
+          }
+        });
+      });
+      list = [...new Map(list.map(item => [item['key'], item])).values()];
+      setBookList(list);
+    } else {
+      setBookList(bookItemList);
+    }
   };
 
   return (
