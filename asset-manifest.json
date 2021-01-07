@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/react-carousel/static/css/main.93600dca.chunk.css",
+    "main.js": "/react-carousel/static/js/main.db4059ca.chunk.js",
+    "main.js.map": "/react-carousel/static/js/main.db4059ca.chunk.js.map",
+    "runtime-main.js": "/react-carousel/static/js/runtime-main.2b41aa1c.js",
+    "runtime-main.js.map": "/react-carousel/static/js/runtime-main.2b41aa1c.js.map",
+    "static/js/2.d3ffdc59.chunk.js": "/react-carousel/static/js/2.d3ffdc59.chunk.js",
+    "static/js/2.d3ffdc59.chunk.js.map": "/react-carousel/static/js/2.d3ffdc59.chunk.js.map",
+    "static/js/3.12c016de.chunk.js": "/react-carousel/static/js/3.12c016de.chunk.js",
+    "static/js/3.12c016de.chunk.js.map": "/react-carousel/static/js/3.12c016de.chunk.js.map",
+    "index.html": "/react-carousel/index.html",
+    "static/css/main.93600dca.chunk.css.map": "/react-carousel/static/css/main.93600dca.chunk.css.map",
+    "static/js/2.d3ffdc59.chunk.js.LICENSE.txt": "/react-carousel/static/js/2.d3ffdc59.chunk.js.LICENSE.txt",
+    "static/media/book-thief.a3674878.jpg": "/react-carousel/static/media/book-thief.a3674878.jpg",
+    "static/media/books-of-earthsea.3f810d24.jpg": "/react-carousel/static/media/books-of-earthsea.3f810d24.jpg",
+    "static/media/game-of-thrones.867be59a.jpg": "/react-carousel/static/media/game-of-thrones.867be59a.jpg",
+    "static/media/good-omens.8026c0dd.jpg": "/react-carousel/static/media/good-omens.8026c0dd.jpg",
+    "static/media/great-gatsby.7fb1e6f8.jpg": "/react-carousel/static/media/great-gatsby.7fb1e6f8.jpg",
+    "static/media/harry-potter.dd79516a.jpg": "/react-carousel/static/media/harry-potter.dd79516a.jpg",
+    "static/media/hitchikers-guide-to-galaxy.c302dcb0.jpeg": "/react-carousel/static/media/hitchikers-guide-to-galaxy.c302dcb0.jpeg",
+    "static/media/lord-of-the-rings.bd0c75f5.jpg": "/react-carousel/static/media/lord-of-the-rings.bd0c75f5.jpg",
+    "static/media/pride-and-prejudice.bbca10ec.jpg": "/react-carousel/static/media/pride-and-prejudice.bbca10ec.jpg",
+    "static/media/sapiens.351114c1.jpg": "/react-carousel/static/media/sapiens.351114c1.jpg",
+    "static/media/wuthering-heights.d2751fdd.jpg": "/react-carousel/static/media/wuthering-heights.d2751fdd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b41aa1c.js",
+    "static/js/2.d3ffdc59.chunk.js",
+    "static/css/main.93600dca.chunk.css",
+    "static/js/main.db4059ca.chunk.js"
+  ]
+}
