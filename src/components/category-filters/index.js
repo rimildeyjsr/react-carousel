@@ -17,12 +17,14 @@ const CategoryFilters = ({setBookList}) => {
     selectedFilters.splice(filterIndex, 1);
     setSelectedFilter(selectedFilters);
     buttonRef.current.children[index].style.backgroundColor = 'white';
+    buttonRef.current.children[index].style.color = '#b9c95a';
   };
 
   const addFilter = (category, index) => {
     selectedFilters.push(category);
     setSelectedFilter(selectedFilters);
-    buttonRef.current.children[index].style.backgroundColor = '#dcf9ec';
+    buttonRef.current.children[index].style.backgroundColor = '#b9c95a';
+    buttonRef.current.children[index].style.color = 'white';
   };
 
   const isFilterSelected = (category) => {

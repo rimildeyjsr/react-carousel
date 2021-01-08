@@ -13,16 +13,14 @@ function App() {
         list={bookList}
       />
 
-      <div
-        className="divider-line"
-      />
-
-      <h2>
-        Filter the list
-      </h2>
-      <CategoryFilters
-        setBookList={setBookList}
-      />
+      <div className="category-filter-container">
+        <h2 className="filter-heading">
+          Filter
+        </h2>
+        <CategoryFilters
+          setBookList={setBookList}
+        />
+      </div>
     </div>
   );
 }

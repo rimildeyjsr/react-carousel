@@ -29,7 +29,15 @@ const Carousel = ({list}) => {
   };
 
   return (
-    <>
+    <section>
+      <button
+        onClick={moveToPreviousIndex}
+        className={activeIndex - 2 >= 0 ? 'arrow-button' : 'restricted-cursor arrow-button'}
+        disabled={activeIndex - 2 < 0}
+      >
+        {"<"}
+      </button>
+
       <div className="carousel">
         {
           bookList.length > 0 ?
@@ -58,24 +66,14 @@ const Carousel = ({list}) => {
         }
       </div>
 
-      <div className="carousel-arrow-wrapper">
-        <button
-          onClick={moveToPreviousIndex}
-          className={activeIndex - 2 >= 0 ? 'arrow-button' : 'restricted-cursor arrow-button'}
-          disabled={activeIndex - 2 < 0}
-        >
-          {"<"}
-        </button>
-
-        <button
-          onClick={moveToNextIndex}
-          className={activeIndex + 2 <  bookList.length ? 'arrow-button' : 'restricted-cursor  arrow-button'}
-          disabled={activeIndex + 2 >=  bookList.length}
-        >
-          {">"}
-        </button>
-      </div>
-    </>
+      <button
+        onClick={moveToNextIndex}
+        className={activeIndex + 2 <  bookList.length ? 'arrow-button' : 'restricted-cursor  arrow-button'}
+        disabled={activeIndex + 2 >=  bookList.length}
+      >
+        {">"}
+      </button>
+    </section>
   );
 };
 
