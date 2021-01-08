@@ -4,13 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: #fbfff0;
-}
-
-.divider-line {
-    background-color: black;
-    height: 1px;
-    width: 80%;
-    margin: 10px 0 20px;
+    height: 100vh;
 }
 
 .category-filter-container {
@@ -23,7 +17,8 @@
 }
 
 .filter-heading {
+    font-family: 'Chivo', sans-serif;
     font-size: 24px;
     color: #4200ff;
-    margin: 0 0 10px;
+    margin: 0 0 20px;
 }

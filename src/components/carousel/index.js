@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import CarouselItem from "../carousel-item";
 import "./index.css";
+import leftArrow from "../../assets/left-arrow.png";
+import rightArrow from "../../assets/right-arrow.png";
 
 const Carousel = ({list}) => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -35,7 +37,10 @@ const Carousel = ({list}) => {
         className={activeIndex - 2 >= 0 ? 'arrow-button' : 'restricted-cursor arrow-button'}
         disabled={activeIndex - 2 < 0}
       >
-        {"<"}
+        <img
+          src={leftArrow}
+          alt="left arrow"
+        />
       </button>
 
       <div className="carousel">
@@ -60,9 +65,9 @@ const Carousel = ({list}) => {
 
             :
 
-            <h3>
+            <h1 className="no-item-text">
               No items to show here!
-            </h3>
+            </h1>
         }
       </div>
 
@@ -71,7 +76,10 @@ const Carousel = ({list}) => {
         className={activeIndex + 2 <  bookList.length ? 'arrow-button' : 'restricted-cursor  arrow-button'}
         disabled={activeIndex + 2 >=  bookList.length}
       >
-        {">"}
+        <img
+          src={rightArrow}
+          alt="right arrow"
+        />
       </button>
     </section>
   );
