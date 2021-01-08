@@ -12,6 +12,8 @@ const Carousel = ({list}) => {
 
   useEffect(() => {
     setBookList(list);
+    setActiveIndex(1);
+    setOffset(0);
   }, [list]);
 
   const moveToPreviousIndex = () => {
